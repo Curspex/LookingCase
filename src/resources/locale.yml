@@ -1,0 +1,5 @@
+notPlayer: '&eYou must be a player to do this!'
+enabledSelector: '&aLookingCase selector enabled!<n>Right-click to register, left-click to remove.'
+disabledSelector: '&cLookingCase selector disabled!'
+addedContainer: '&aContainer registered!'
+removedContainer: '&cContainer removed!'

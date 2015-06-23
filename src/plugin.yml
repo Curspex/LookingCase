@@ -1,0 +1,36 @@
+name: LookingCase
+main: sx.cur.omnivion.lookingcase.LookingCase
+version: 1.0.0
+author: Omnivion
+database: false
+website: http://cur.sx/omnivion
+
+commands:
+  lookingcase:
+    description: Allow viewing of a selected container without modification.
+    usage: /<command>
+    aliases: [lc, case, lookcase]
+    permission: lookingcase.create
+
+permissions:
+  lookingcase.*:
+    default: op
+    description: Allows access to all LookingCase nodes.
+    children:
+      lookingcase.all: true
+  lookingcase.all:
+    default: op
+    description: Allows access to all LookingCase nodes.
+    children:
+      lookingcase.modify: true
+      lookingcase.create: true
+      lookingcase.delete: true
+  lookingcase.create:
+    default: false
+    description: Allows creation of cases.
+  lookingcase.delete:
+    default: false
+    description: Allows deletion of cases.
+  lookingcase.modify:
+    default: false
+    description: Allows modification of cases.
