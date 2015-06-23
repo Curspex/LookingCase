@@ -12,12 +12,12 @@ public class CaseUtil {
 		LookingCase.i.getConfigRegistrar().getData().addCase(location);
 	}
 
-	public static void deleteCase(Location location)
+	public static void deleteCase(final Location location)
 	{
 		LookingCase.i.getConfigRegistrar().getData().getCases().remove(location);
 	}
 	
-	public static boolean isCase(Location location)
+	public static boolean isCase(final Location location)
 	{
 		return LookingCase.i.getConfigRegistrar().getData().getCases().contains(location);
 	}
