@@ -42,7 +42,7 @@ public class LookingCaseOpenEvent extends InventoryEvent implements Cancellable 
 	@Override
 	public HandlerList getHandlers()
 	{
-    	return LookingCaseOpenEvent.handlers;
+		return LookingCaseOpenEvent.handlers;
 	}
 
 
